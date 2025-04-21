@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="theme-toggle" aria-label="Toggle dark mode" class="theme-btn">🌙</button>
+    <h1>My Hobbies</h1>
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" class="tab active" data-tab="cooking">Cooking</button>
+      <button role="tab" aria-selected="false" class="tab" data-tab="legos">Legos</button>
+      <button role="tab" aria-selected="false" class="tab" data-tab="books">Books</button>
+      <button role="tab" aria-selected="false" class="tab" data-tab="music">Music</button>
+    </div>
+
+    <div class="tab-content" id="cooking" aria-labelledby="cooking-tab">
+        <div class="image-card">
+            <img src="images/food/brown butter cookies.png" alt="brown butter chocolate chip cookies">
+            <div class="title">Brown Butter Chocolate Chip Cookies</div>
+            <div class="description">Delicious homemade chocolate chip cookies made with browned butter and sourdough discard!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/food/chicken tandoori with chutney.png" alt="chicken tandoori with green chutney">
+            <div class="title">Chicken Tandoori</div>
+            <div class="description">Tasty chicken tandoori paired with a homemade mint chutney!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/food/Chicken tandoori wrap.png" alt="Chicken tandoori wrap with french fries">
+            <div class="title">Chicken Tandoori Wrap</div>
+            <div class="description">Turn your chicken tandoori into a wrap with homemade fries!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/food/plain sourdough.png" alt="plain sourdough bread">
+            <div class="title">Plain Sourdough Bread</div>
+            <div class="description">My first attempt at plain homemade sourdough bread!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/food/ricotta stuffed shells.png" alt="Ricotta stuffed shell pasta">
+            <div class="title">Ricotta Stuffed Shells</div>
+            <div class="description">Stuffed spinach and ricotta shells covered in a homemade marinara sauce!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/food/sourdough flight.png" alt="6 loafs of sourdough bread">
+            <div class="title">Variety Sourdough Bread</div>
+            <div class="description">A variety of breads including cheddar jalepeno, pesto mozzarella, and more!</div>
+          </div>
+    </div>
+    <div class="tab-content hidden" id="legos" aria-labelledby="legos-tab">
+        <div class="image-card">
+            <img src="images/legos/chess set.png" alt="chess lego set">
+            <div class="title">Chess</div>
+            <div class="description">Lego Chess Set!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/legos/flower art.png" alt="Lego set that resembles a floral art work">
+            <div class="title">Wall Art</div>
+            <div class="description">A floral lego set that can be hung on your wall!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/legos/green car.png" alt="Green lamborghini Huracan">
+            <div class="title">Lamborghini</div>
+            <div class="description">Green lamborghini Huracan!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/legos/radio.png" alt="Mint teal lego radio">
+            <div class="title">Vintage Radio</div>
+            <div class="description">A lego radio that plays music when you spin the dial!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/legos/taj mahal.png" alt="Lego miniature Taj Mahal">
+            <div class="title">Taj Mahal</div>
+            <div class="description">The Taj Mahal!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/legos/typewriter.png" alt="green and black lego typewriter">
+            <div class="title">Vintage Typewriter</div>
+            <div class="description">A typewriter that is interactive and the keys are pressable!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/legos/venom.png" alt="Venom from the Spider Man movies">
+            <div class="title">Venom</div>
+            <div class="description">Meet Venom from the Spider Man Movies!</div>
+          </div>
+          <div class="image-card">
+            <img src="images/legos/vespa.png" alt="Blue Vespa with flowers on the backseat">
+            <div class="title">Vespa</div>
+            <div class="description">Gorgeous blue Vespa with a helmet and flowers!</div>
+          </div>
+          
+    </div>
+    <div class="tab-content hidden" id="books" aria-labelledby="books-tab">
+        <div class="book-card">
+            <div class="book" tabindex="0">
+              <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1685248649i/123423832.jpg" alt="The Hobbit Book Cover">
+              </div>
+              <div class="inner-page">
+                <p class="rating">⭐️⭐️⭐️⭐️⭐️<br>A legendary adventure I love!</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book" tabindex="0">
+              <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661221065i/62057697.jpg" alt="Harry Potter Book Cover">
+              </div>
+              <div class="inner-page">
+                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="book-card">
+            <div class="book" tabindex="0">
+              <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1462368675i/30108909.jpg" alt="Harry Potter Book Cover">
+              </div>
+              <div class="inner-page">
+                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+              </div>
+            </div>
+          </div>
+        
+        <div class="book-card">
+            <div class="book" tabindex="0">
+              <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710781474i/199235727.jpg" alt="Harry Potter Book Cover">
+              </div>
+              <div class="inner-page">
+                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="book-card">
+            <div class="book" tabindex="0">
+              <div class="cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1611937942i/56732449.jpg" alt="Harry Potter Book Cover">
+              </div>
+              <div class="inner-page">
+                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="tab-content hidden" id="music" aria-labelledby="music-tab">
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5H7ixXZfsNMGbIE5OBSpcb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>          </div>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0hBRqPYPXhr1RkTDG3n4Mk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> </div>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        </div>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2Lxoc72vRTGdQfMvj7Ovi1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        </div>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/78YYcghEDz2dHRx0EcDGXZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    </div>
+        <div class="spotify-embed">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2c8SoKQdYX3D7tN1ywt9xb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>        
+    </div>    
+  <script src="java.js"></script>
+  <footer id="footer">
+    <p>&copy; <span id="footer-date"></span> Simranpreet Kaur</p>
+  </footer>
+</body>
+</html>
