@@ -39,7 +39,7 @@ const themeToggleBtn = document.getElementById("theme-toggle");
 themeToggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
-  // moon and soon icon swap //
+  // moon and sun icon swap //
   const isDark = document.body.classList.contains("dark-mode");
   themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
 });
