@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <button id="theme-toggle" aria-label="Toggle dark mode" class="theme-btn">🌙</button>
     <h1>My Hobbies</h1>
     <div class="tabs" role="tablist">
-      <button role="tab" aria-selected="true" class="tab active" data-tab="cooking">Cooking</button>
-      <button role="tab" aria-selected="false" class="tab" data-tab="legos">Legos</button>
-      <button role="tab" aria-selected="false" class="tab" data-tab="books">Books</button>
-      <button role="tab" aria-selected="false" class="tab" data-tab="music">Music</button>
-    </div>
+        <button id="cooking-tab" role="tab" aria-selected="true" aria-controls="cooking" class="tab active" data-tab="cooking">Cooking</button>
+        <button id="legos-tab" role="tab" aria-selected="false" aria-controls="legos" class="tab" data-tab="legos">Legos</button>
+        <button id="books-tab" role="tab" aria-selected="false" aria-controls="books" class="tab" data-tab="books">Books</button>
+        <button id="music-tab" role="tab" aria-selected="false" aria-controls="music" class="tab" data-tab="music">Music</button>
+
+      </div>
+      
 
     <div class="tab-content" id="cooking" aria-labelledby="cooking-tab">
         <div class="image-card">
@@ -96,10 +98,10 @@
         <div class="book-card">
             <div class="book" tabindex="0">
               <div class="cover">
-                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1685248649i/123423832.jpg" alt="The Hobbit Book Cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1685248649i/123423832.jpg" alt="The Coworker Book Cover. A red heel in front of an elevator.">
               </div>
               <div class="inner-page">
-                <p class="rating">⭐️⭐️⭐️⭐️⭐️<br>A legendary adventure I love!</p>
+                <p class="rating">⭐️⭐️⭐️⭐️<br>A suspenseful office-based thriller!</p>
               </div>
             </div>
         </div>
@@ -107,10 +109,10 @@
         <div class="book-card">
             <div class="book" tabindex="0">
               <div class="cover">
-                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661221065i/62057697.jpg" alt="Harry Potter Book Cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661221065i/62057697.jpg" alt="Twisted Love by Ana Huang">
               </div>
               <div class="inner-page">
-                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+                <p class="rating">⭐️⭐️⭐️<br>A romantic enemies to lover romance!</p>
               </div>
             </div>
           </div>
@@ -118,10 +120,10 @@
         <div class="book-card">
             <div class="book" tabindex="0">
               <div class="cover">
-                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1462368675i/30108909.jpg" alt="Harry Potter Book Cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1462368675i/30108909.jpg" alt="Brain divided into different chunks. Brain Damage by Frieda McFadden">
               </div>
               <div class="inner-page">
-                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+                <p class="rating">⭐️⭐️⭐️⭐️⭐️<br>An action-based thriller that will keep you on your toes!</p>
               </div>
             </div>
           </div>
@@ -129,10 +131,10 @@
         <div class="book-card">
             <div class="book" tabindex="0">
               <div class="cover">
-                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710781474i/199235727.jpg" alt="Harry Potter Book Cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710781474i/199235727.jpg" alt="A woman with blue eyes looking through a keyhole. The Housemaid is Watching by Frieda McFadden">
               </div>
               <div class="inner-page">
-                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+                <p class="rating">⭐️⭐️⭐️⭐️<br>Book 3 in a series of a hero housemaid!</p>
               </div>
             </div>
           </div>
@@ -140,10 +142,10 @@
         <div class="book-card">
             <div class="book" tabindex="0">
               <div class="cover">
-                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1611937942i/56732449.jpg" alt="Harry Potter Book Cover">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1611937942i/56732449.jpg" alt="Two scientists kissing. The Love Hypothesis by Ali Hazelwood">
               </div>
               <div class="inner-page">
-                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A magical journey back to my childhood!</p>
+                <p class="rating">⭐️⭐️⭐️⭐️✨<br>A fake dating to lovers scientist romance story!</p>
               </div>
             </div>
           </div>
@@ -161,7 +163,7 @@
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/78YYcghEDz2dHRx0EcDGXZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    </div>
         <div class="spotify-embed">
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2c8SoKQdYX3D7tN1ywt9xb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>        
-    </div>    
+        </main>    
   <script src="java.js"></script>
   <footer id="footer">
     <p>&copy; <span id="footer-date"></span> Simranpreet Kaur</p>

@@ -33,7 +33,7 @@ document.querySelectorAll(".book").forEach(book => {
     });
   });
   
-// dark mode java //
+// dark mode java from devcommunity.to//
 const themeToggleBtn = document.getElementById("theme-toggle");
 
 themeToggleBtn.addEventListener("click", () => {
