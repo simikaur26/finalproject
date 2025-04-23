@@ -227,35 +227,36 @@ body {
     color: #aaa;
   }
   
-  @media (max-width: 900px) {
+  @media (min-width: 600px) {
     .image-card, .book-card, .spotify-embed {
       flex: 1 1 45%;
       max-width: 45%;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .image-card, .book-card, .spotify-embed {
-      flex: 1 1 100%;
-      max-width: 100%;
     }
   
     .tabs {
-      flex-wrap: wrap;
-      gap: 10px;
+      flex-wrap: nowrap;
+      gap: 0;
     }
   
     .tab {
-      flex: 1 1 45%;
-      max-width: 45%;
+      flex: unset;
+      max-width: unset;
     }
   
     h1 {
-      font-size: 2.5em;
+      font-size: 4em;
     }
   
     .theme-btn {
-      font-size: 20px;
+      font-size: 24px;
     }
   }
+  
+  @media (min-width: 900px) {
+    .image-card, .book-card, .spotify-embed {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+  }
+  
   
